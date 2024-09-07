@@ -7,11 +7,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about', ['nama' => 'Anggi Maulana']);
+    return view('about', ['name' => 'Anggi Maulana', 'title' => 'About Me']);
 });
 
 Route::get('/contact', function () {
-    return view('contact', ['ig' => 'https://instagram.com/anggii.jsx']);
+    return view('contact', ['ig' => 'https://instagram.com/anggii.jsx', 'title' => 'Contact']);
 });
 
 Route::get('/blog', function () {
