@@ -34,7 +34,7 @@ class Post
         // arrow function
         $post = Arr::first(static::all(), fn ($post) => $post['slug'] ==$slug );
 
-        if (! $post) {
+        if (!$post) {
             abort(404);
         }
 
